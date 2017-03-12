@@ -6,4 +6,6 @@ node_js:
   - "5"
   - "4"
 before_install: npm i -g depcheck diamondpkg less
-install: npm i -g
+install:
+  - npm i
+  - npm i -g
