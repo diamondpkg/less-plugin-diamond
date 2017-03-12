@@ -1,3 +1,5 @@
+'use strict';
+
 const getImporter = require('./importer');
 const getPostProcessor = require('./postProcessor');
 
