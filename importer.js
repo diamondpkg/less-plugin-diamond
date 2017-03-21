@@ -12,7 +12,7 @@ module.exports = less => class Importer extends less.FileManager {
   }
 
   supports(name) {
-    return /^\[([^\s/]+)(.+)?](\s+as\s+([a-zA-Z]+))?$/.test(name);
+    return /^~([^\s/]+)(.*)$/.test(name);
   }
 
   loadFile(filename, currentDirectory, options, environment) {
@@ -35,7 +35,7 @@ module.exports = less => class Importer extends less.FileManager {
       return Promise.reject(new Error('no packages installed'));
     }
 
-    const match = filename.match(/^\[([^\s/]+)(.+)?](\s+as\s+([a-zA-Z]+))?$/);
+    const match = filename.match(/^~([^\s/]+)(.*)$/);
 
     let pkg;
     if (/^packages\/([^/]+).+/.test(path.relative(__dirname, currentDirectory))) {

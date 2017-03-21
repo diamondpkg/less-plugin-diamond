@@ -9,7 +9,7 @@ depcheck --ignores=eslint,eslint-config-airbnb,eslint-plugin-import,eslint-plugi
 
 # Install
 printf "\n\nInstalling bootstrap@3.3.7\n"
-diamond install bootstrap@3.3.7
+diamond install bootstrap@3.3.7 --no-save
 
 # Test
 printf "\nCompiling..."
