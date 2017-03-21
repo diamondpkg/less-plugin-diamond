@@ -36,6 +36,6 @@
     "proper-lockfile": "^2.0.0"
   },
   "peerDependencies": {
-    "diamondpkg": "^0.7.0"
+    "diamondpkg": ">=0.7.0 <1.0.0"
   }
 }
