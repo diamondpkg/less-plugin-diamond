@@ -3,13 +3,9 @@
 # Exit on errors
 set -e
 
-# Check dependencies
-printf "Checking dependencies\n"
-depcheck --ignores=eslint,eslint-config-airbnb,eslint-plugin-import,eslint-plugin-jsx-a11y,eslint-plugin-react,diamondpkg
-
 # Install
 printf "\n\nInstalling bootstrap@3.3.7\n"
-diamond install bootstrap@3.3.7 --no-save
+diamond install npm:bootstrap@3.3.7 --no-save
 
 # Test
 printf "\nCompiling..."

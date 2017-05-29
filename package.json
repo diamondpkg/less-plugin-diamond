@@ -1,12 +1,9 @@
 {
   "name": "less-plugin-diamond",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "The Less plugin for diamond",
   "main": "index.js",
   "preferGlobal": true,
-  "scripts": {
-    "test": "eslint src/* && bash test/test.sh"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diamondpkg/less-plugin-diamond.git"
@@ -24,18 +21,7 @@
     "url": "https://github.com/diamondpkg/less-plugin-diamond/issues"
   },
   "homepage": "https://github.com/diamondpkg/less-plugin-diamond#readme",
-  "devDependencies": {
-    "eslint": "^3.17.1",
-    "eslint-config-airbnb-base": "^11.1.1",
-    "eslint-plugin-import": "^2.2.0"
-  },
   "dependencies": {
-    "async": "^2.1.5",
-    "deasync-promise": "^1.0.1",
-    "fs-extra": "^2.0.0",
-    "proper-lockfile": "^2.0.0"
-  },
-  "peerDependencies": {
-    "diamondpkg": ">=0.7.0 <1.0.0"
+    "diamondpkg": ">=0.10.3 <1.0.0"
   }
 }
